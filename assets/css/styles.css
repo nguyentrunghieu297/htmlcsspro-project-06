@@ -1,0 +1,46 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #5d3bee;
+    --secondary-color: #fbfaff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "DM Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "DM Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
