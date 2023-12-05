@@ -263,17 +263,60 @@ button {
     justify-content: space-between;
 }
 
+.clients__heading {
+    display: flex;
+    gap: 12px;
+    width: 336px;
+    color: #080415;
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 5rem; /* 119.048% */
+    letter-spacing: -0.168rem;
+}
+
+.clients__heading::before {
+    margin-top: 22px;
+    content: "";
+    width: 86px;
+    height: 2px;
+    background-color: #5d3bee;
+}
+
 .client__list {
     width: 710px;
     display: grid;
     row-gap: 34px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto);
 }
 
 .client__item {
     display: flex;
     align-items: center;
     column-gap: 12px;
+}
+
+.client__item:nth-child(1) .client__item-img-wrap {
+    background-color: transparent;
+}
+
+.client__item:nth-child(2) .client__item-img-wrap {
+    background-color: #fbfaff;
+}
+
+.client__item:nth-child(3) .client__item-img-wrap {
+    background-color: #fee101;
+}
+
+.client__item:nth-child(4) .client__item-img-wrap {
+    background-color: #f00;
+}
+
+.client__item:nth-child(5) .client__item-img-wrap {
+    background-color: #14a800;
+}
+
+.client__item:nth-child(6) .client__item-img-wrap {
+    background-color: #fff;
 }
 
 .client__item-img-wrap {
@@ -284,6 +327,11 @@ button {
     height: 36px;
     border-radius: 50%;
     background-color: orange;
+}
+
+.client__item-name {
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 /* ===== SPECIALTIES ===== */
 /* ===== PROJECT ===== */
