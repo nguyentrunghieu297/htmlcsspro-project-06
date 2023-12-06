@@ -467,6 +467,14 @@ button {
     align-items: center;
     justify-content: space-between;
     background: #fbfaff;
+    transition: box-shadow 0.25s, transform 0.25s;
+}
+
+.project__item:hover {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px,
+        rgba(255, 255, 255, 0.1) 0px 8px 24px,
+        rgba(255, 255, 255, 0.1) 0px 16px 48px;
+    transform: translateY(-10px);
 }
 
 .project__item-content {
@@ -530,8 +538,204 @@ button {
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 3rem; /* 166.667% */
+    border: 1px solid transparent;
+    transition: 0.25s;
+}
+
+.project__view-all:hover {
+    color: var(--secondary-color);
+    background-color: #ffffff20;
+    border: 1px solid var(--secondary-color);
 }
 /* ===== EXPERIENCE ===== */
+.experience {
+    margin-top: 140px;
+}
+
+.exp__inner {
+}
+
+.exp__header {
+}
+
+.exp__header-top {
+    text-align: center;
+}
+
+.exp__tag {
+    color: #5d3bee;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 4rem; /* 125% */
+    letter-spacing: -0.128rem;
+}
+
+.exp__heading {
+    margin-top: 10px;
+    color: #080415;
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 6.6rem; /* 117.857% */
+    letter-spacing: -0.224rem;
+}
+
+.exp__desc {
+    margin: 15px auto 0;
+    width: 570px;
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem; /* 166.667% */
+}
+
+.exp__header-bottom {
+    padding: 20px 0;
+    position: relative;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.exp__header-bottom::before,
+.exp__header-bottom::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 946px;
+    height: 1px;
+    background-color: #080415;
+    opacity: 0.2;
+}
+
+.exp__header-bottom::before {
+    top: 0;
+}
+
+.exp__header-bottom::after {
+    bottom: 0;
+}
+
+.exp__stats-number {
+    color: #080415;
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 7.6rem; /* 135.714% */
+    letter-spacing: 0.168rem;
+    text-decoration-line: underline;
+}
+
+.exp__stats-desc {
+    color: #51586a;
+    font-size: 1.8rem;
+    line-height: 3rem; /* 166.667% */
+}
+
+.exp__media {
+    margin-top: 70px;
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.exp__media-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.exp__response {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.exp__response-heading {
+    color: #080415;
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 6.6rem; /* 117.857% */
+    letter-spacing: -0.224rem;
+}
+
+.exp__response-desc {
+    margin: 0 auto;
+    width: 570px;
+    margin-top: 20px;
+    color: #51586a;
+    font-size: 1.8rem;
+    line-height: 3rem; /* 166.667% */
+}
+
+.exp__response-comment {
+    margin: 0 auto;
+    width: 679px;
+    margin-top: 60px;
+    color: #51586a;
+    font-size: 2.4rem;
+    line-height: 4rem; /* 166.667% */
+}
+
+.exp__response-user {
+    margin-top: 36px;
+}
+
+.exp__response-people {
+    display: flex;
+    column-gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.exp__response-avatar {
+    width: 39px;
+    height: 39px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.exp__response-name {
+    color: #080415;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 4rem; /* 133.333% */
+}
+
+.exp__response-role {
+    color: #51586a;
+    font-size: 1.6rem;
+    line-height: 2.9rem; /* 181.25% */
+}
+
+.exp__dots {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.exp__dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #08041533;
+}
+
+.exp__dot:hover {
+    background-color: #5d3bee;
+    opacity: 0.5;
+}
+
+.exp__dot--active {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #5d3bee;
+    opacity: 1;
+    border: 3.5px solid #fff;
+    outline: 1.5px solid #5d3bee;
+}
 /* ===== QUESTION ===== */
 /* ===== ATMOSPHERE ===== */
 /* ===== CONTACT ===== */
