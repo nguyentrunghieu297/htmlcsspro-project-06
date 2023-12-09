@@ -3,8 +3,33 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>My Portfolio</title>
         <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./assets/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#006700" />
+        <meta name="theme-color" content="#ffffff" />
         <!-- Font Embed -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +41,7 @@
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/grid.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
         <!-- HEADER -->
@@ -563,118 +589,194 @@
                         <div class="question__qa-list">
                             <!-- Question 1 -->
                             <div class="question__qa">
-                                <div class="question__qa-content">
-                                    <h3 class="question__qa-heading">
-                                        What is your hourly rate?
-                                    </h3>
-                                    <p class="question__qa-desc">
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. In urna, non nisl
-                                        tincidunt ut elementum turpis.
-                                    </p>
-                                </div>
                                 <input
                                     type="checkbox"
                                     name=""
-                                    id="question__qa-btn"
+                                    id="question__target-1"
+                                    class="question__target"
                                     hidden
                                 />
                                 <label
-                                    class="question__qa-btn"
-                                    for="question__qa-btn"
+                                    class="question__qa-label"
+                                    for="question__target-1"
                                 >
-                                    <img
-                                        src="./assets/icon/more-btn.svg"
-                                        alt=""
-                                        class="question__qa-more"
-                                    />
-                                </label>
-                            </div>
-
-                            <!-- Question 2 -->
-                            <div class="question__qa">
-                                <div class="question__qa-content">
                                     <h3 class="question__qa-heading">
-                                        What type of projects do you take on?
+                                        What is your hourly rate?
                                     </h3>
+                                    <div class="question__qa-btn">
+                                        <img
+                                            src="./assets/icon/more-btn.svg"
+                                            alt=""
+                                            class="question__qa-more"
+                                        />
+                                        <img
+                                            src="./assets/icon/less-btn.svg"
+                                            alt=""
+                                            class="question__qa-less"
+                                        />
+                                    </div>
+                                </label>
+                                <div class="question__qa-content">
                                     <p class="question__qa-desc">
                                         Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit. In urna, non nisl
                                         tincidunt ut elementum turpis.
                                     </p>
                                 </div>
-                                <div class="question__qa-btn">
-                                    <img
-                                        src="./assets/icon/more-btn.svg"
-                                        alt=""
-                                        class="question__qa-more"
-                                    />
+                                <div class="question__qa-line"></div>
+                            </div>
+                            <!-- Question 2 -->
+                            <div class="question__qa">
+                                <input
+                                    type="checkbox"
+                                    name=""
+                                    id="question__target-2"
+                                    class="question__target"
+                                    hidden
+                                />
+                                <label
+                                    class="question__qa-label"
+                                    for="question__target-2"
+                                >
+                                    <h3 class="question__qa-heading">
+                                        What type of projects do you take on?
+                                    </h3>
+                                    <div class="question__qa-btn">
+                                        <img
+                                            src="./assets/icon/more-btn.svg"
+                                            alt=""
+                                            class="question__qa-more"
+                                        />
+                                        <img
+                                            src="./assets/icon/less-btn.svg"
+                                            alt=""
+                                            class="question__qa-less"
+                                        />
+                                    </div>
+                                </label>
+                                <div class="question__qa-content">
+                                    <p class="question__qa-desc">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. In urna, non nisl
+                                        tincidunt ut elementum turpis.
+                                    </p>
                                 </div>
+                                <div class="question__qa-line"></div>
                             </div>
 
                             <!-- Question 3 -->
                             <div class="question__qa">
-                                <div class="question__qa-content">
+                                <input
+                                    type="checkbox"
+                                    name=""
+                                    id="question__target-3"
+                                    class="question__target"
+                                    hidden
+                                />
+                                <label
+                                    class="question__qa-label"
+                                    for="question__target-3"
+                                >
                                     <h3 class="question__qa-heading">
-                                        How do you charge for projects ?
-                                    </h3>
+                                        How do you charge for projects ?                                    </h3>
+                                    <div class="question__qa-btn">
+                                        <img
+                                            src="./assets/icon/more-btn.svg"
+                                            alt=""
+                                            class="question__qa-more"
+                                        />
+                                        <img
+                                            src="./assets/icon/less-btn.svg"
+                                            alt=""
+                                            class="question__qa-less"
+                                        />
+                                    </div>
+                                </label>
+                                <div class="question__qa-content">
                                     <p class="question__qa-desc">
                                         Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit. In urna, non nisl
                                         tincidunt ut elementum turpis.
                                     </p>
                                 </div>
-                                <div class="question__qa-btn">
-                                    <img
-                                        src="./assets/icon/more-btn.svg"
-                                        alt=""
-                                        class="question__qa-more"
-                                    />
-                                </div>
+                                <div class="question__qa-line"></div>
                             </div>
 
                             <!-- Question 4 -->
                             <div class="question__qa">
-                                <div class="question__qa-content">
+                                <input
+                                    type="checkbox"
+                                    name=""
+                                    id="question__target-4"
+                                    class="question__target"
+                                    hidden
+                                />
+                                <label
+                                    class="question__qa-label"
+                                    for="question__target-4"
+                                >
                                     <h3 class="question__qa-heading">
-                                        What time-zone do you work in?
-                                    </h3>
+                                        What time-zone do you work in?                                    </h3>
+                                    <div class="question__qa-btn">
+                                        <img
+                                            src="./assets/icon/more-btn.svg"
+                                            alt=""
+                                            class="question__qa-more"
+                                        />
+                                        <img
+                                            src="./assets/icon/less-btn.svg"
+                                            alt=""
+                                            class="question__qa-less"
+                                        />
+                                    </div>
+                                </label>
+                                <div class="question__qa-content">
                                     <p class="question__qa-desc">
                                         Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit. In urna, non nisl
                                         tincidunt ut elementum turpis.
                                     </p>
                                 </div>
-                                <div class="question__qa-btn">
-                                    <img
-                                        src="./assets/icon/more-btn.svg"
-                                        alt=""
-                                        class="question__qa-more"
-                                    />
-                                </div>
+                                <div class="question__qa-line"></div>
                             </div>
 
                             <!-- Question 5 -->
                             <div class="question__qa">
-                                <div class="question__qa-content">
+                                <input
+                                    type="checkbox"
+                                    name=""
+                                    id="question__target-5"
+                                    class="question__target"
+                                    hidden
+                                />
+                                <label
+                                    class="question__qa-label"
+                                    for="question__target-5"
+                                >
                                     <h3 class="question__qa-heading">
-                                        How often can we communicate?
-                                    </h3>
+                                        How often can we communicate?                                    </h3>
+                                    <div class="question__qa-btn">
+                                        <img
+                                            src="./assets/icon/more-btn.svg"
+                                            alt=""
+                                            class="question__qa-more"
+                                        />
+                                        <img
+                                            src="./assets/icon/less-btn.svg"
+                                            alt=""
+                                            class="question__qa-less"
+                                        />
+                                    </div>
+                                </label>
+                                <div class="question__qa-content">
                                     <p class="question__qa-desc">
                                         Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit. In urna, non nisl
                                         tincidunt ut elementum turpis.
                                     </p>
                                 </div>
-                                <div class="question__qa-btn">
-                                    <img
-                                        src="./assets/icon/more-btn.svg"
-                                        alt=""
-                                        class="question__qa-more"
-                                    />
-                                </div>
+                                <div class="question__qa-line"></div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -689,7 +791,7 @@
                                 adipiscing elit. In urna, non nisl tincidunt ut
                                 elementum turpis.
                             </p>
-                            <p class="atm__tag">@interaction_arif</p>
+                            <a href="#!"><p class="atm__tag">@interaction_arif</p></a>
                         </div>
                         <div class="atm__media">
                             <div class="row">
