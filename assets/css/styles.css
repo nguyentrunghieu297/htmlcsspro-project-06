@@ -785,6 +785,7 @@ button {
 }
 
 .question__qa-heading {
+    margin-left: 22px;
     color: #080415;
     font-size: 3.2rem;
     font-weight: 500;
