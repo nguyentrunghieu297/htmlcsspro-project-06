@@ -1,22 +1,165 @@
-/* X-Small devices (portrait phones, less than 576px) */
-/* No media query for `xs` since this is the default in Bootstrap */
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+/* PC */
+@media screen and (min-width: 992px) {
+    .show-on-mobile {
+        display: none;
+    }
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+/* Tablet & Mobile */
+@media screen and (max-width: 991.98px) {
+    .header__inner {
+        padding: 0 20px;
+        justify-content: flex-start;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__mail {
+        margin-left: auto;
+        order: 2;
+    }
+
+    .header__email-name {
+        display: none;
+    }
+
+    .emoji {
+        order: 1;
+        position: static;
+        transform: translateX(-10px);
+    }
+
+    .header__checkbox-toggle {
+        margin-left: 10px;
+        order: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        border: 1px solid rgba(93, 59, 238, 0.2);
+    }
+
+    .hero__inner {
+        flex-direction: column-reverse;
+    }
+
+    .hero__right {
+        width: auto;
+        justify-items: center;
+        align-self: flex-start;
+    }
+
+    .hero__heading {
+        width: 620px;
+        color: #080415;
+        font-size: 6rem;
+        font-weight: 600;
+        line-height: 7.6rem; /* 95% */
+        letter-spacing: 0;
+    }
+
+    .hero__desc {
+        width: 500px;
+    }
+
+    .hero__follow {
+        margin-top: 30px;
+    }
+
+    .hero__left {
+        margin: 0 auto;
+    }
+
+    .hero__decor-1 {
+        width: 130%;
+        left: -100px;
+    }
+
+    .hero__decor-2 {
+        display: none;
+    }
+
+    /* ===== Client Mobile ===== */
+
+    .clients__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clients__heading {
+        width: 472px;
+    }
+
+    .client__list {
+        margin-top: 42px;
+        width: 600px;
+        display: grid;
+        justify-content: space-evenly;
+        align-items: center;
+        row-gap: 34px;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .spec__list {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    /* ===== Project ===== */
+
+    .project__header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .project__desc {
+        margin: 0;
+        width: 500px;
+    }
+
+    /* ===== EXPERIENCE ===== */
+
+    .exp__stats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* ===== QUESTION ===== */
+    .question {
+        margin: 120px 10px;
+    }
+
+    .question__qa {
+        width: 85vw;
+    }
+
+    /* ===== ATMOSPHERE ===== */
+
+    .atm__media-wrap {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .atm__media-img {
+        height: 625px;
+    }
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
 }
 
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+/* Mobile */
+@media screen and (max-width: 767.98px) {
 }
 
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
+/* Mobile SE */
+@media screen and (max-width: 576px) {
 }

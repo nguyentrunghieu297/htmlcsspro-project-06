@@ -70,7 +70,7 @@ button {
     column-gap: 10px;
 }
 
-#ebe7fe .header__logo-wrap {
+.header__logo-wrap {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,9 +155,7 @@ button {
 
 .hero__heading {
     color: #080415;
-    font-family: DM Sans;
     font-size: 8rem;
-    font-style: normal;
     font-weight: 500;
     line-height: 7.6rem; /* 95% */
     letter-spacing: -0.32rem;
@@ -167,10 +165,7 @@ button {
     margin-top: 20px;
     width: 370px;
     color: #51586a;
-    font-family: DM Sans;
     font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 3rem; /* 166.667% */
 }
 
@@ -429,9 +424,6 @@ button {
     background: #5d3bee;
 }
 
-.project__inner {
-}
-
 .project__header {
     display: flex;
     column-gap: 160px;
@@ -441,7 +433,6 @@ button {
 .project__heading {
     width: 468px;
     color: #fff;
-    font-family: DM Sans;
     font-size: 5.6rem;
     font-weight: 500;
     line-height: 6.6rem; /* 117.857% */
@@ -462,6 +453,7 @@ button {
 }
 
 .project__item {
+    margin-top: 30px;
     padding: 24px 24px 24px 34px;
     display: flex;
     align-items: center;
@@ -626,6 +618,7 @@ button {
 }
 
 .exp__stats-number {
+    text-align: center;
     color: #080415;
     font-size: 5.6rem;
     font-weight: 500;
