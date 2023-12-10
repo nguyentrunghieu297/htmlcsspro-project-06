@@ -134,6 +134,12 @@
         align-items: center;
     }
 
+    .exp__header-bottom::before,
+    .exp__header-bottom::after {
+        width: 99%;
+        height: 1px;
+    }
+
     /* ===== QUESTION ===== */
     .question {
         margin: 120px 10px;
@@ -219,7 +225,6 @@
     .copyright__right {
         margin: 0 auto 29px;
         order: 1;
-        display: flex;
     }
 
     .copyright__terms {
@@ -228,7 +233,7 @@
 
     .footer__line {
         order: 2;
-        width: 100vh;
+        width: 100%;
         height: 1px;
         background-color: #0c072033;
     }

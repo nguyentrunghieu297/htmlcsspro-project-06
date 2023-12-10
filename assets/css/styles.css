@@ -929,6 +929,7 @@ button {
 }
 
 .contact__info {
+    overflow: hidden;
     position: relative;
     z-index: 2;
 }
@@ -1023,6 +1024,10 @@ button {
 .copyright__text {
     margin-left: 129px;
     margin-right: auto;
+}
+
+.copyright__right {
+    display: flex;
 }
 
 .copyright__policy {
