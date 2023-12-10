@@ -7,6 +7,7 @@
 
 /* Tablet & Mobile */
 @media screen and (max-width: 991.98px) {
+    /* ===== Header ===== */
     .header__inner {
         padding: 0 20px;
         justify-content: flex-start;
@@ -42,6 +43,8 @@
         border-radius: 50%;
         border: 1px solid rgba(93, 59, 238, 0.2);
     }
+
+    /* ===== Hero ===== */
 
     .hero__inner {
         flex-direction: column-reverse;
@@ -149,6 +152,85 @@
 
     .atm__media-img {
         height: 625px;
+    }
+
+    /* ===== CONTACT ===== */
+
+    .contact {
+        width: 100%;
+    }
+
+    .contact__decor-right,
+    .contact__decor-left {
+        display: none;
+    }
+
+    .contact__decor-center {
+        width: 106%;
+        top: 0;
+        left: -60px;
+    }
+
+    /* ===== Footer ===== */
+
+    .footer {
+        width: 100%;
+    }
+
+    .footer__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__mail {
+        margin: 58px 0 0 0;
+        order: 3;
+    }
+
+    .footer__email-name {
+        display: block;
+    }
+
+    .footer__emoji {
+        margin-left: 28px;
+        order: 1;
+    }
+
+    .footer__nav {
+        margin-top: 20px;
+        display: block;
+        order: 2;
+    }
+
+    .copyright {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+
+    .copyright__text {
+        margin: 0 auto;
+        padding-top: 20px;
+        order: 3;
+    }
+
+    .copyright__right {
+        margin: 0 auto 29px;
+        order: 1;
+        display: flex;
+    }
+
+    .copyright__terms {
+        margin: 0;
+    }
+
+    .footer__line {
+        order: 2;
+        width: 100vh;
+        height: 1px;
+        background-color: #0c072033;
     }
 }
 
