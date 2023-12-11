@@ -922,8 +922,8 @@ button {
 
 .contact {
     position: relative;
-    margin: 140px auto 0;
-    width: 1330px;
+    margin: 140px 135px 0;
+    /* width: 100%; */
     background: #fbfaff;
     text-align: center;
 }
